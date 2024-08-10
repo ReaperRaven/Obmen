@@ -11,7 +11,7 @@ def update_c_label(event):
     c_label.config(text=name)
 
 def exchange():
-    t_code = t_combobox.get()
+    t_code = t_combobox.get() #выпадающий список
     b_code = b_combobox.get()
 #    code = entry.get() #для ввода валюты в окно
     if t_code and b_code:
