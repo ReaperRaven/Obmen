@@ -75,7 +75,7 @@ b2_combobox.bind('<<ComboboxSelected>>', lambda event: b2_label.config(text=cur[
 b2_label = ttk.Label()
 b2_label.pack(padx=10, pady=10)
 
-Label(text='Целевая валюта').pack(padx=10, pady=10) #выбор валюты из списка
+Label(text='Целевая валюта').pack(padx=10, pady=10) #выбор валюты из полного списка
 t_combobox = ttk.Combobox(values=list(cur.keys()))
 t_combobox.pack(padx=10, pady=10)
 t_combobox.bind('<<ComboboxSelected>>', update_t_label)
